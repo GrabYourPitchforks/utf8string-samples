@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <!--
+      Change the below version to reference the exact version you're looking for.
+      Check https://github.com/dotnet/corefx/tree/feature/utf8string/Documentation/utf8string/version_history.md for latest version information and version history.
+     -->
+    <RuntimeFrameworkVersion>3.0.0-alphautf8string-27003-05</RuntimeFrameworkVersion>
+    <NETCoreAppMaximumVersion>3.0</NETCoreAppMaximumVersion>
+    <LangVersion>latest</LangVersion>
+    <HighEntropyVA>true</HighEntropyVA>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  <!-- Include the below element if you intend on using "dotnet publish" -->
+  <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\Documents\wrnpc10.txt" Link="wrnpc10.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\Documents\1342.txt" Link="1342.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\Documents\11.txt" Link="11.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="4.5.2" />
+  </ItemGroup>
+
+</Project>
