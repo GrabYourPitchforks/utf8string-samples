@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <!--
+      Change the below version to reference the exact version you're looking for.
+      Check https://github.com/dotnet/corefx/tree/feature/utf8string/Documentation/utf8string/version_history.md for latest version information and version history.
+     -->
+    <RuntimeFrameworkVersion>3.0.0-alphautf8string-27003-05</RuntimeFrameworkVersion>
+    <NETCoreAppMaximumVersion>3.0</NETCoreAppMaximumVersion>
+    <LangVersion>latest</LangVersion>
+    <HighEntropyVA>true</HighEntropyVA>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <!-- Include the below element if you intend on using "dotnet publish" -->
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\BaselineFormParse\CountryCodes.txt" Link="CountryCodes.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

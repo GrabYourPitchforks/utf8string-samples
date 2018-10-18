@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExperimentalCountWords", "E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaselineFormParse", "BaselineFormParse\BaselineFormParse.csproj", "{159C0433-D4D0-48B8-A801-F8203C2C88A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExperimentalFormParse", "ExperimentalFormParse\ExperimentalFormParse.csproj", "{0E8DD0A4-DDE9-482B-86B0-9C40018E7CB8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,11 +29,12 @@ Global
 		{159C0433-D4D0-48B8-A801-F8203C2C88A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{159C0433-D4D0-48B8-A801-F8203C2C88A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{159C0433-D4D0-48B8-A801-F8203C2C88A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E8DD0A4-DDE9-482B-86B0-9C40018E7CB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E8DD0A4-DDE9-482B-86B0-9C40018E7CB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E8DD0A4-DDE9-482B-86B0-9C40018E7CB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E8DD0A4-DDE9-482B-86B0-9C40018E7CB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {07B71E92-23C8-4320-9ECC-4EB9E4D24FBF}
 	EndGlobalSection
 EndGlobal
