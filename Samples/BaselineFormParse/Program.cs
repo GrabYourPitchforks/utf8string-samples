@@ -11,15 +11,14 @@ namespace BaselineFormParse
         {
             byte[] countryCodes = ReadCountryCodesUrlEncoded();
 
-            var sw = new Stopwatch();
             while (true)
             {
-                sw.Restart();
+                int gcCount = GC.CollectionCount(0);
                 for (int i = 0; i < 100_000; i++)
                 {
                     var dict = FormParse.Parse(countryCodes, isQueryString: false);
                 }
-                Console.WriteLine(sw.Elapsed);
+                Console.WriteLine(GC.CollectionCount(0) - gcCount);
             }
         }
 

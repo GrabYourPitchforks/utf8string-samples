@@ -141,7 +141,7 @@ namespace BaselineFormParse
 
         public static Dictionary<Utf8String, Utf8String> Parse(ReadOnlySpan<byte> input, bool isQueryString)
         {
-            var retVal = new Dictionary<Utf8String, Utf8String>(Utf8StringComparer.OrdinalIgnoreCase);
+            var retVal = new Dictionary<Utf8String, Utf8String>();
 
             byte[] borrowedArray = null;
 

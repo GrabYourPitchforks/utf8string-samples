@@ -142,7 +142,7 @@ namespace BaselineFormParse
 
         public static Dictionary<string, string> Parse(ReadOnlySpan<byte> input, bool isQueryString)
         {
-            var retVal = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+            var retVal = new Dictionary<string, string>();
 
             byte[] borrowedArray = null;
 
